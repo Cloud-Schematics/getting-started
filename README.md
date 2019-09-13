@@ -5,7 +5,7 @@ It contains information and guidelines on writing terraform templates repoistory
 
   * Each repositiry should have README.md which basically explains the infrastructure architecture, variables and its default values.
   
-  * main.tf, variables.tf, outputs.tf. These are the recommended filenames for a minimal module, even if they're empty. main.tf should be the primary entrypoint. For a simple module, this may be where all the resources are created. For a complex module, resource creation may be split into multiple files but any nested module calls should be in the main file. variables.tf and outputs.tf should contain the declarations for variables and outputs, respectively.
+  * configuration tf files, variables.tf, outputs.tf. These are the recommended filenames for a minimal module, even if they're empty. main configuration tf file should be the primary entrypoint. For a simple module, this may be where all the resources are created. For a complex module, resource creation may be split into multiple files but any nested module calls should be in the main file. variables.tf and outputs.tf should contain the declarations for variables and outputs, respectively.
   
   * All variables and outputs should have one or two sentence descriptions that explain their purpose. 
   
