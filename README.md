@@ -8,7 +8,7 @@ Some of the `must do` and `should have` task for the Terraform templates are:
 
 ### Must do
 - Create Terraform template by using Terraform version0.13 or higher. For latest releases, refer to [IBM Cloud provider](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest).
-- Ensure all the terraform related files such as `main.tf`, `versions.tf`, etc., are placed in the root folder.
+- Ensure the Terraform related files such as `main.tf`, `versions.tf`, etc., are placed in the root folder only.
 - Ensure your repository contains `versions.tf` to run the required Terraform version. For `versions.tf`, refer to [sample versions tf file](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-setup_cli#install-provider-v13). 
 - Ensure pre-commit hooks are executed to inspect your code meets Terraform standards. Refer to [sample repository that contains pre-commit hook](https://github.com/terraform-ibm-modules/terraform-ibm-iam/blob/main/.pre-commit-config.yaml).
 - Prepare `README.md` that explains the **title**, **short description**, **version requirements**, **about examples**, **modules**, **prerequisites**, **input and output variables** with description, **steps to run the example or modules**, **verification**, **troubleshooting tips**, and **reference** from your repository. For more information, see [README template](README_Template.md). 
