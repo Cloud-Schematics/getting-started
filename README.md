@@ -8,7 +8,7 @@ Some of the `must do` and `should have` task for the Terraform templates are:
 
 ### Must do
 - Create Terraform template by using Terraform version0.13 or higher. For latest releases, refer to [IBM Cloud provider](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest).
-- Ensure the Terraform related files such as `main.tf`, `versions.tf`, etc., are placed in the root folder only.
+- Ensure the Terraform related files such as `main.tf`, `versions.tf`, etc., are placed in a root folder.
 - Ensure your repository contains `versions.tf` to run the required Terraform version. For `versions.tf`, refer to [sample versions tf file](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-setup_cli#install-provider-v13). 
 - Ensure pre-commit hooks are executed to inspect your code meets Terraform standards. Refer to [sample repository that contains pre-commit hook](https://github.com/terraform-ibm-modules/terraform-ibm-iam/blob/main/.pre-commit-config.yaml).
 - Prepare `README.md` that explains the **title**, **short description**, **version requirements**, **about examples**, **modules**, **prerequisites**, **input and output variables** with description, **steps to run the example or modules**, **verification**, **troubleshooting tips**, and **reference** from your repository. For more information, see [README template](README_Template.md). 
@@ -19,11 +19,12 @@ Some of the `must do` and `should have` task for the Terraform templates are:
 - Add required license file for your template.
 - Run secrets manager test by using detect secret tool.
 - Migrate your template to the latest versions. For example, migrate repository templates using Terraform v0.11 to Terraform v0.13 or higher.
+- `Release tags` - Tags are used to identify template versions. Release tag names must be a semantic version, which can optionally be prefixed with `v`. For example, v1.0.0.
+- Archive your template in a '.tgz' file extension format to onboard to your private catalog.
 
 ### Should have
 
-- `Release tags` - Tags are used to identify template versions. Release tag names must be a semantic version, which can optionally be prefixed with `v`. For example, v1.0.0.
-- Add tags for your template for ease search operation.
+- Add tags for your template to ease user search operation.
 
 ### Don'ts
 - Assume having a reference for the steps is good enough. The CLI steps and link to the API/SDK references if any, to be provided for the example.
@@ -42,11 +43,12 @@ Some of the `must do` and `should have` task for the Ansible actions repositorie
 - Ensure the variables and outputs must have one or two sentence descriptions that explains the purpose of the variables.
 - Run secrets manager test by using detect secret tool.
 - Add required license file for your template.
+- Archive your template in a '.tgz' file extension format to onboard to your private catalog.
+- `Release tags` - Tags are used to identify template versions. Release tag names must be a semantic version, which can optionally be prefixed with `v`. For example, v1.0.0.
 
 ### Should have
 
-- `Release tags` - Tags are used to identify template versions. Release tag names must be a semantic version, which can optionally be prefixed with `v`. For example, v1.0.0.
-- Add tags for your template for ease search operation.
+- Add tags for your templatet to ease user search operation.
 
 ### Don'ts
 - Assume having a reference for the steps is good enough. The CLI steps and link to the API/SDK references if any, to be provided for the example.
