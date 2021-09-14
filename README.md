@@ -18,8 +18,8 @@ Some of the `must do` and `should have` task for the Terraform templates are:
 - Ensure your repository contains gitignore for any files that are not tracked by git remain untracked.
 - Add required license file for your template.
 - Run secrets manager test by using detect secret tool.
-- Describe your template in the `about` settings.
-- Provide the search topics for your template in the settings.
+- Describe your template in the **about** settings.
+- Provide the search **topics** for your template in the settings.
 - Migrate your template to the latest versions. For example, migrate repository templates using Terraform v0.11 to Terraform v0.13 or higher.
 - `Release tags` - Tags are used to identify template versions. Release tag names must be a semantic version, which can optionally be prefixed with `v`. For example, **v1.0.0**.
 - Archive your template in a `.tgz` file extension format to onboard to your private catalog. The size of the `.tgz` must be `<=40MB`. <br> **Note** If you .tgz file size if greater than 40 MB, Use `rm -rf .git .gitignore` command to reduce the size of the `.tgz` file and create `tar czfv <reponame>.tgz .`.
