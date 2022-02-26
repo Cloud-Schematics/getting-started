@@ -49,7 +49,7 @@ Some of the `must do` and `should have` task for the Ansible actions repositorie
 - Add required license file for your template.
 - Describe your template in the **About** settings section. 
 - Provide the search **Topics** for your template in the settings section.
-- Archive your template in a `.tgz` file extension format to onboard to your private catalog. The size of the `.tgz` must be `<=40MB`. <br> **Note** If you .tgz file size if greater than 40 MB, Use `rm -rf .git .gitignore` command to reduce the size of the `.tgz` file and create `tar czfv <reponame>.tgz .`.
+- Archive your template in a `.tgz` file extension format to onboard to your private catalog. The size of the `.tgz` must be `<=40MB`. <br> **Note** If your .tgz file size if greater than 40 MB, Use `rm -rf .git .gitignore` command to reduce the size of the `.tgz` file and create `tar czfv <reponame>.tgz .`.
 - `Release tags` - Tags are used to identify template versions. Release tag names must be a semantic version, which can optionally be prefixed with `v`. For example, **v1.0.0**.
 - Run a [detect secrets](https://cloud.ibm.com/docs/secrets-manager) to monitor the secret leaks within your repository. To run the detect secrets, you need to [install detect secret CLI tool](https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-cli-plugin-secrets-manager-cli), **scan detect secrets** `detect-secrets scan --update .secrets.baseline`, and **audit detect secrets** `detect-secrets audit .secrets.baseline` to check your respository do not contain the secrets.
 
